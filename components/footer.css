@@ -1,32 +1,18 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    overflow-x: hidden;
-    /* Prevent horizontal scroll */
-}
-
 footer {
-    background: linear-gradient(90deg, #ff5722, #ff9800);
-    /* background: #333; */
+    background-color: #FF6F00;
+    /* same as navbar */
     color: #fff;
     text-align: center;
     padding: 30px 5%;
-    /* Responsive padding */
-    width: 100%;
 }
 
 footer a {
-    color: #ff9800;
+    color: #fff;
     text-decoration: none;
     margin: 0 10px;
     transition: 0.3s;
 }
 
 footer a:hover {
-    color: #ff5722;
+    color: rgba(255, 255, 255, 0.7);
 }

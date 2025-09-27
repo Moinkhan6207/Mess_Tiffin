@@ -7,18 +7,45 @@ body {
 
 /* Page Header */
 .menu-header {
+    position: relative;
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    overflow: hidden;
     margin-top: 100px;
-    padding: 50px 20px;
-    background: linear-gradient(90deg, #603813, #b29f94);
-
-
+    /* video overflow hide kare */
     color: white;
+    /* text color */
+}
+
+
+.menu-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    /* video stretch ho ke section cover kare */
+}
+
+.menu-content {
+    position: relative;
+    z-index: 1;
+    /* video ke upar content */
 }
 
 .menu-header h2 {
     font-size: 2.5rem;
 }
+
 
 /* Filters */
 .menu-filters {
@@ -95,6 +122,7 @@ body {
 .menu-card button {
     padding: 10px 15px;
     background: #ff5722;
+    margin-bottom: 20px;
     color: white;
     border: none;
     border-radius: 6px;
@@ -120,12 +148,15 @@ body {
 
 /* By default menu hidden on mobile */
 .navbar ul {
-    display: flex; /* desktop ke liye */
+    display: flex;
+    /* desktop ke liye */
 }
+
 @media (max-width: 768px) {
     .navbar ul {
         display: none;
     }
+
     .navbar ul.active {
         display: flex;
         flex-direction: column;

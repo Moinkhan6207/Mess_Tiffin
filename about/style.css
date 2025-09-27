@@ -87,14 +87,14 @@
 }
 
 .values li:hover {
-    background: #ff5722;
+    background: #7CB342;
 }
 
 /* Download Button */
 .about-text button {
     padding: 12px 25px;
     font-size: 1rem;
-    background-color: #ff5722;
+    background-color: #7CB342;
     color: #fff;
     border: none;
     border-radius: 8px;
@@ -203,6 +203,7 @@
     font-size: 22px;
     margin-bottom: 20px;
     font-weight: 500;
+    color: black;
 }
 
 .about-cta button {
@@ -218,13 +219,11 @@
 }
 
 .about-cta button:hover {
-    background: #ff6600;
+    background: #7CB342;
     color: #fff;
     transform: translateY(-3px);
-    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 6px 14px rgb(219, 36, 67);
 }
-
-
 
 
 

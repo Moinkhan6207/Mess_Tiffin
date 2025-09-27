@@ -16,7 +16,7 @@ body {
     align-items: center;
     padding: 15px 5%;
     /* Instead of fixed 50px, use % for responsive */
-    background: linear-gradient(90deg, #ff5722, #ff9800);
+    background-color: #FF6F00;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     position: fixed;
     top: 0;
@@ -77,7 +77,7 @@ body {
         display: none;
         flex-direction: column;
         gap: 15px;
-        background: linear-gradient(90deg, #ff5722, #ff9800);
+        background-color: #D32F2F;
         position: absolute;
         top: 70px;
         right: 0;
