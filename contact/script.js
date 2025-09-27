@@ -9,10 +9,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // Contact form validation
-    const contactForm = document.getElementById("contactForm");
-    contactForm.addEventListener("submit", (e) => {
-        e.preventDefault();
-        alert("Thank you! Your message has been sent.");
-        contactForm.reset();
-    });
+    //     const contactForm = document.getElementById("contactForm");
+    //     contactForm.addEventListener("submit", (e) => {
+    //         alert("Thank you! Your message has been sent.");
+    //         contactForm.reset();
+    //     });
 });
