@@ -1,0 +1,133 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Page Header */
+.menu-header {
+    text-align: center;
+    margin-top: 100px;
+    padding: 50px 20px;
+    background: linear-gradient(90deg, #603813, #b29f94);
+
+
+    color: white;
+}
+
+.menu-header h2 {
+    font-size: 2.5rem;
+}
+
+/* Filters */
+.menu-filters {
+    text-align: center;
+    padding: 20px;
+}
+
+#searchBar {
+    padding: 10px;
+    width: 250px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.filter-btn {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    background: #ff9800;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.filter-btn:hover {
+    background: #e64a19;
+}
+
+/* Menu Cards */
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.menu-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.menu-card:hover {
+    transform: scale(1.05);
+}
+
+.menu-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.menu-card h3 {
+    margin: 10px 0;
+    color: #333;
+}
+
+.menu-card p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.menu-card span {
+    font-weight: bold;
+    color: #ff5722;
+    display: block;
+    margin: 10px 0;
+}
+
+.menu-card button {
+    padding: 10px 15px;
+    background: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.menu-card button:hover {
+    background: #e64a19;
+}
+
+/* Offers */
+.menu-offers {
+    text-align: center;
+    padding: 30px;
+    background: #fff8e1;
+    margin-top: 30px;
+    border-radius: 8px;
+}
+
+.menu-offers h3 {
+    color: #ff5722;
+}
+
+/* By default menu hidden on mobile */
+.navbar ul {
+    display: flex; /* desktop ke liye */
+}
+@media (max-width: 768px) {
+    .navbar ul {
+        display: none;
+    }
+    .navbar ul.active {
+        display: flex;
+        flex-direction: column;
+    }
+}

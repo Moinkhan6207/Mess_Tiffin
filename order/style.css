@@ -1,0 +1,131 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Page Header */
+.order-header {
+    text-align: center;
+    margin-top: 100px;
+    padding: 50px 20px;
+    background: linear-gradient(120deg, #ff7e5f, #feb47b);
+    color: white;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.order-header h2 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+    animation: fadeIn 1s ease-in;
+}
+
+.order-header p {
+    font-size: 1.2rem;
+    animation: fadeIn 1.5s ease-in;
+}
+
+/* Order Form Container */
+.order-form-section {
+    max-width: 650px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    animation: fadeIn 1s ease-in;
+}
+
+/* Form Groups */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    border-color: #ff7e5f;
+    box-shadow: 0 0 5px rgba(255, 126, 95, 0.5);
+    outline: none;
+}
+
+/* Button */
+.submit-btn {
+    padding: 14px;
+    width: 100%;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+    color: #fff;
+    background: linear-gradient(120deg, #ff7e5f, #feb47b);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Confirmation Message */
+.confirmation-message {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #d4edda;
+    color: #155724;
+    font-weight: 600;
+    text-align: center;
+    display: none;
+    animation: fadeIn 0.5s ease-in;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Mobile Responsive */
+@media(max-width:768px) {
+    .order-form-section {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .order-header h2 {
+        font-size: 2rem;
+    }
+
+    .order-header p {
+        font-size: 1rem;
+    }
+}

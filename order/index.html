@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Now - Mess Tiffin Service</title>
+    <link rel="stylesheet" href="../components/navbar.css">
+    <link rel="stylesheet" href="../components/footer.css">
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <img src="../assets/image/tiffinlogo.avif" alt="Mess Tiffin Logo" class="logo">
+
+            <!-- Hamburger menu button -->
+            <div class="menu-toggle" id="menu-toggle">☰</div>
+
+            <ul id="nav-links">
+                <li><a href="../home/index.html">Home</a></li>
+                <li><a href="../about/index.html">About</a></li>
+                <li><a href="../menu/index.html">Menu</a></li>
+                <li><a href="../contact/index.html">Contact</a></li>
+                <li><a href="../order/index.html">Order</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="order-header">
+        <h2>Place Your Order</h2>
+        <p>Quick and easy ordering for your favorite meals!</p>
+    </section>
+
+    <!-- Order Form Section -->
+    <section class="order-form-section">
+
+        <form id="orderForm" action="https://formspree.io/f/xpwyqzqz" method="POST">
+
+            <!-- Dish Details -->
+            <div class="form-group">
+                <label for="dish">Selected Dish</label>
+                <input type="text" id="dish" name="dish" readonly>
+            </div>
+
+            <div class="form-group">
+                <label for="price">Price (₹)</label>
+                <input type="number" id="price" name="price" readonly>
+            </div>
+
+            <div class="form-group">
+                <label for="quantity">Quantity</label>
+                <input type="number" id="quantity" name="quantity" min="1" value="1">
+            </div>
+
+            <div class="form-group">
+                <label for="total">Total Price (₹)</label>
+                <input type="number" id="total" name="total" readonly>
+            </div>
+
+            <!-- User Details -->
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required placeholder="Your full name">
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required placeholder="10-digit number">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email (Optional)</label>
+                <input type="email" id="email" name="email" placeholder="your@email.com">
+            </div>
+
+            <div class="form-group">
+                <label for="address">Full Delivery Address</label>
+                <textarea id="address" name="address" required placeholder="Street, City, Pin Code"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="landmark">Landmark (Optional)</label>
+                <input type="text" id="landmark" name="landmark" placeholder="e.g., Near SBI ATM">
+            </div>
+
+            <div class="form-group">
+                <label for="payment">Payment Method</label>
+                <select id="payment" name="payment" required>
+                    <option value="cod">Cash on Delivery</option>
+                    <option value="upi">UPI</option>
+                    <option value="card">Card</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="instructions">Special Instructions (Optional)</label>
+                <textarea id="instructions" name="instructions"
+                    placeholder="No onion, Call before delivery, etc."></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Place Order</button>
+
+            <!-- Confirmation Message -->
+            <div id="confirmation" class="confirmation-message"></div>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 Mess Tiffin Service | All Rights Reserved</p>
+    </footer>
+
+    <script src="../components/common.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

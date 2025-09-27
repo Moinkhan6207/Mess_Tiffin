@@ -1,0 +1,241 @@
+/* About Section */
+.about {
+    padding: 80px 5%;
+    /* Responsive padding */
+    background: #fff8f0;
+    /* Light warm color */
+    text-align: center;
+    margin-top: 50px;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    color: #ff5722;
+    margin-bottom: 10px;
+}
+
+.about p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 50px;
+}
+
+/* About Content Layout */
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    /* Responsive wrap */
+}
+
+/* Owner Photo */
+.owner-photo {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    margin-right: 40px;
+    margin-bottom: 50px;
+    /* Circular */
+    border: 4px solid #ff9800;
+    object-fit: cover;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.owner-photo:hover {
+    transform: scale(1.05);
+}
+
+/* About Text */
+.about-text {
+    max-width: 600px;
+    text-align: left;
+}
+
+.about-text h3 {
+    color: #6d4c41;
+    /* Dark brown */
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Values List */
+.values {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.values li {
+    background: #ff9800;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.values li:hover {
+    background: #ff5722;
+}
+
+/* Download Button */
+.about-text button {
+    padding: 12px 25px;
+    font-size: 1rem;
+    background-color: #ff5722;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.about-text button:hover {
+    background-color: #e64a19;
+}
+
+
+/* Mission & Vision Section */
+.mission-vision {
+    background: linear-gradient(135deg, #fff7f0, #ffe4cc);
+    padding: 50px 30px;
+    text-align: center;
+    border-radius: 12px;
+    margin: 40px auto;
+    max-width: 900px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.mission-vision h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #ff6600;
+}
+
+.mission-vision p {
+    font-size: 18px;
+    color: #444;
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+/* Why Choose Us Section */
+.highlights {
+    padding: 50px 30px;
+    text-align: center;
+    margin: 40px auto;
+    max-width: 900px;
+}
+
+.highlights h3 {
+    font-size: 28px;
+    margin-bottom: 25px;
+    color: #ff6600;
+}
+
+.highlights ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.highlights li {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    color: #333;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.highlights li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+
+
+/* Testimonials */
+.testimonials {
+    background: #fff3e6;
+    padding: 40px 20px;
+    margin-top: 40px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.testimonials blockquote {
+    font-style: italic;
+    margin: 15px 0;
+    color: #444;
+}
+
+
+/* CTA Section */
+.about-cta {
+    background: linear-gradient(135deg, #ff6600, #ff944d);
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+    border-radius: 12px;
+    margin: 50px auto;
+    max-width: 900px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.about-cta p {
+    font-size: 22px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.about-cta button {
+    background: #fff;
+    color: #ff6600;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.about-cta button:hover {
+    background: #ff6600;
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text {
+        text-align: center;
+    }
+}
