@@ -3,15 +3,19 @@
     max-width: 1200px;
     margin: auto;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f9f9f9;
+    background: #fefefe;
+    /* clean background */
 }
 
+/* Heading */
 .contact h2 {
     text-align: center;
     font-size: 2.8rem;
-    color: #ff5722;
+    color: #2C3E50;
+    /* dark navy for premium */
     margin-bottom: 10px;
     letter-spacing: 1px;
+    font-weight: 700;
 }
 
 .contact p {
@@ -21,15 +25,15 @@
     margin-bottom: 50px;
 }
 
-/* Contact Flex Container */
+/* Flex container */
 .contact-container {
     display: flex;
-    gap: 50px;
+    gap: 40px;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-/* Left Section: Info + FAQ */
+/* Left Info + FAQ */
 .contact-left {
     flex: 1 1 45%;
     display: flex;
@@ -37,111 +41,127 @@
     gap: 30px;
 }
 
-/* Cards for Info & FAQ */
+/* Card Style */
 .contact-left .contact-info,
 .contact-left .faq {
-    background-color: #fff;
-    padding: 25px 20px;
-    text-align: center;
-    border-radius: 12px;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
+    background: #ffffff;
+    padding: 30px 25px;
+    border-radius: 16px;
+    text-align: left;
+    border: 1px solid #eee;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
 }
 
 .contact-left .contact-info:hover,
 .contact-left .faq:hover {
     transform: translateY(-5px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
 }
 
+/* Titles */
 .contact-left h3 {
-    color: #ff5722;
+    color: #34495E;
     margin-bottom: 15px;
     font-size: 1.6rem;
+    font-weight: 600;
 }
 
+/* Text */
 .contact-left p,
 .contact-left a {
     font-size: 1rem;
-    line-height: 1.8;
-    color: #555;
+    line-height: 1.7;
+    color: #444;
 }
 
 .contact-left a {
-    color: #ff9800;
+    color: #2980B9;
+    font-weight: 500;
     text-decoration: none;
-    transition: 0.3s;
+    transition: color 0.3s;
 }
 
 .contact-left a:hover {
-    color: #ff5722;
+    color: #1ABC9C;
 }
 
-/* Right Section: Form */
+/* Right Section - Form */
 .contact-right {
     flex: 1 1 45%;
+    background: #fff;
+    padding: 35px 30px;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
 }
 
 .contact-right h3 {
-    color: #ff5722;
+    color: #2C3E50;
     font-size: 1.8rem;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    font-weight: 600;
 }
 
+/* Form fields */
 .contact-right form {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 18px;
 }
 
 .contact-right input,
 .contact-right textarea {
     padding: 14px 16px;
     border: 1px solid #ddd;
-    border-radius: 8px;
+    border-radius: 10px;
     font-size: 1rem;
     outline: none;
-    transition: 0.3s;
+    transition: border 0.3s, box-shadow 0.3s;
+    background: #fafafa;
 }
 
 .contact-right input:focus,
 .contact-right textarea:focus {
-    border-color: #ff5722;
-    box-shadow: 0 0 8px rgba(255, 87, 34, 0.3);
+    border-color: #2980B9;
+    box-shadow: 0 0 8px rgba(41, 128, 185, 0.2);
 }
 
+/* Textarea size */
 .contact-right textarea {
     min-height: 140px;
     resize: none;
 }
 
+/* Submit button */
 .contact-right button {
     padding: 14px 20px;
-    background: linear-gradient(90deg, #ff5722, #ff9800);
+    background: #2980B9;
+    /* royal blue */
     color: #fff;
     border: none;
     border-radius: 10px;
     cursor: pointer;
     font-size: 1.1rem;
     font-weight: 600;
-    box-shadow: 0 6px 12px rgba(255, 87, 34, 0.3);
-    transition: 0.4s;
+    transition: 0.3s;
 }
 
 .contact-right button:hover {
-    background: linear-gradient(90deg, #e64a19, #ff6f00);
+    background: #1ABC9C;
+    /* greenish hover */
     transform: translateY(-2px);
-    box-shadow: 0 8px 16px rgba(230, 74, 25, 0.4);
+    box-shadow: 0 6px 16px rgba(26, 188, 156, 0.3);
 }
 
 /* Map */
 .map {
     margin-top: 60px;
-    border-radius: 12px;
+    border-radius: 16px;
     overflow: hidden;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
 }
 
-/* Mobile Responsive */
+/* Responsive */
 @media (max-width: 768px) {
     .contact-container {
         flex-direction: column;
@@ -155,10 +175,5 @@
 
     .contact h2 {
         font-size: 2.2rem;
-    }
-
-    .contact-right h3,
-    .contact-left h3 {
-        font-size: 1.5rem;
     }
 }
