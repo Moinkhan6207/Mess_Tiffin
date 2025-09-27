@@ -77,12 +77,12 @@ body {
         display: none;
         flex-direction: column;
         gap: 15px;
-        background-color: #D32F2F;
+        background-color: #FF6F00;
         position: absolute;
         top: 70px;
-        right: 0;
-        width: 100%;
-        padding: 20px 0;
+        left: 220px;
+        width: 40%;
+        padding: 2px 0;
         text-align: center;
         max-height: 0;
         overflow: hidden;
