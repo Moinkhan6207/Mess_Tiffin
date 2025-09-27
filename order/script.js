@@ -77,6 +77,6 @@ orderForm.addEventListener("submit", (e) => {
         orderForm.reset();
         quantityInput.value = 1;
         totalInput.value = priceInput.value;
-    }, 2000); // 2 sec delay
+    }, 5000); // 2 sec delay
 
 });
