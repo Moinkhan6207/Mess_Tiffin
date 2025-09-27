@@ -7,10 +7,10 @@
     <title>Menu - Mess Tiffin Service</title>
 
     <!-- Common CSS -->
-    <link rel="stylesheet" href="components/navbar.css">
-    <link rel="stylesheet" href="components/footer.css">
+    <link rel="stylesheet" href="../components/navbar.css">
+    <link rel="stylesheet" href="../components/footer.css">
 
-    <!-- Menu Page CSS -->
+
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -19,17 +19,17 @@
     <!-- Navbar -->
     <header>
         <nav class="navbar">
-            <img src="assets/image/logo.png" alt="Mess Tiffin Logo" class="logo">
+            <img src="/assets/image/logo.png" alt="Mess Tiffin Logo" class="logo">
 
             <!-- Hamburger menu button -->
             <div class="menu-toggle" id="menu-toggle">☰</div>
 
             <ul id="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="order.html">Order</a></li>
+                <li><a href="../home/index.html">Home</a></li>
+                <li><a href="../about/index.html">About</a></li>
+                <li><a href="../menu/index.html">Menu</a></li>
+                <li><a href="../contact/index.html">Contact</a></li>
+                <li><a href="../order/index.html">Order</a></li>
             </ul>
         </nav>
     </header>
@@ -39,10 +39,9 @@
 
         <!-- Background video -->
         <video autoplay muted loop class="menu-video">
-            <source src="assets/image/video4.webm" type="video/mp4">
+            <source src="/assets/image/video4.webm" type="video/mp4">
             Your browser does not support the video tag.
         </video>
-
         <!-- Content on top of video -->
         <div class="menu-content">
             <h2>Our Menu</h2>
@@ -67,110 +66,114 @@
     <section class="menu-items">
         <!-- Card 1 -->
         <div class="menu-card" data-category="veg">
-            <img src="assets/image/paneer.JPG" alt="Paneer Butter Masala">
+            <img src="/assets/image/paneer.JPG" alt="Paneer Butter Masala">
             <h3>Paneer Butter Masala</h3>
-            <p>Paneer Butter Masala served with 2 Butter Roti, Jeera Rice, Salad & Pickle.</p>
+            <p> Paneer Butter Masala served with 2 Butter Roti, Jeera Rice, Salad & Pickle.</p>
             <span>₹120</span>
-            <a href="order.html?item=Paneer%20Butter%20Masala&price=150">
+            <a href="../order/index.html?item=Paneer%20Butter%20Masala&price=150">
                 <button>Order Now</button>
             </a>
         </div>
 
         <!-- Card 2 -->
         <div class="menu-card" data-category="veg">
-            <img src="assets/image/mix.jpeg" alt="Mix Veg Curry">
+            <img src="/assets/image/mix.jpeg" alt="Chicken Curry">
             <h3>Mix Veg Curry</h3>
             <p>Mix Veg Curry served with 2 Chapati, Steamed Rice, Green Salad & Papad.</p>
             <span>₹90</span>
-            <a href="order.html?item=Mix%20Veg%20Curry&price=90">
+            <a href="../order/order.html?item=Chicken%20Curry&price=200">
                 <button>Order Now</button>
             </a>
         </div>
 
         <!-- Card 3 -->
         <div class="menu-card" data-category="veg">
-            <img src="assets/image/dal.jpg" alt="Dal Tadka">
+            <img src="/assets/image/dal.jpg" alt="Samosa">
             <h3>Dal Tadka</h3>
             <p>Dal Tadka served with Steamed Rice, 2 Chapati, Salad & Lemon Slice.</p>
             <span>₹80</span>
-            <a href="order.html?item=Dal%20Tadka&price=80">
+            <a href="../order/order.html?item=Samosa&price=20">
                 <button>Order Now</button>
             </a>
         </div>
 
         <!-- Card 4 -->
         <div class="menu-card" data-category="nonveg">
-            <img src="assets/image/curry.jpg" alt="Chicken Curry">
+            <img src="/assets/image/curry.jpg" alt="Chicken Curry">
             <h3>Chicken Curry</h3>
             <p>Chicken Curry served with Steamed Rice, 2 Chapati, Salad & Pickle.</p>
             <span>₹150</span>
-            <a href="order.html?item=Chicken%20Curry&price=200">
+            <a href="../order/order.html?item=Chicken%20Curry&price=200">
                 <button>Order Now</button>
             </a>
         </div>
+
 
         <!-- Card 5 -->
         <div class="menu-card" data-category="nonveg">
-            <img src="assets/image/biryani.jpg" alt="Chicken Biryani">
+            <img src="/assets/image/biryani.jpg" alt="Chicken Curry">
             <h3>Chicken Biryani</h3>
             <p>Chicken Biryani served with Raita, Salad, Papad & Pickle.</p>
             <span>₹180</span>
-            <a href="order.html?item=Chicken%20Biryani&price=180">
+            <a href="../order/order.html?item=Chicken%20Curry&price=200">
                 <button>Order Now</button>
             </a>
         </div>
+
 
         <!-- Card 6 -->
         <div class="menu-card" data-category="nonveg">
-            <img src="assets/image/fish.avif" alt="Fish Fry">
+            <img src="/assets/image/fish.avif" alt="Chicken Curry">
             <h3>Fish Fry</h3>
             <p>Crispy Fish Fry served with Steamed Rice, Dal Tadka, Salad & Lemon Slice.</p>
             <span>₹160</span>
-            <a href="order.html?item=Fish%20Fry&price=160">
+            <a href="../order/order.html?item=Chicken%20Curry&price=200">
                 <button>Order Now</button>
             </a>
         </div>
 
+
         <!-- Card 7 -->
         <div class="menu-card" data-category="snacks">
-            <img src="assets/image/samosa.webp" alt="Samosa">
+            <img src="/assets/image/samosa.webp" alt="Chicken Curry">
             <h3>Samosa 1 Plate</h3>
             <p>2 Crispy Samosa served with Green Chutney & Tamarind Chutney.</p>
             <span>₹25</span>
-            <a href="order.html?item=Samosa&price=25">
+            <a href="../order/order.html?item=Chicken%20Curry&price=200">
                 <button>Order Now</button>
             </a>
         </div>
 
         <!-- Card 8 -->
         <div class="menu-card" data-category="snacks">
-            <img src="assets/image/bread.webp" alt="Bread Pakora">
+            <img src="/assets/image/bread.webp" alt="Chicken Curry">
             <h3>Bread Pakora</h3>
             <p>2 Bread Pakora served with Green Chutney.</p>
             <span>₹25</span>
-            <a href="order.html?item=Bread%20Pakora&price=25">
+            <a href="../order/order.html?item=Chicken%20Curry&price=200">
                 <button>Order Now</button>
             </a>
         </div>
 
         <!-- Card 9 -->
         <div class="menu-card" data-category="drinks">
-            <img src="assets/image/soda.jpg" alt="Fresh Lemon Soda">
+            <img src="/assets/image/soda.jpg" alt="Chicken Curry">
             <h3>Fresh Lemon Soda</h3>
             <p>Lemon soda with a perfect mix of salt & sugar.</p>
             <span>₹30</span>
-            <a href="order.html?item=Fresh%20Lemon%20Soda&price=30">
+            <a href="../order/order.html?item=Chicken%20Curry&price=200">
                 <button>Order Now</button>
             </a>
         </div>
 
+
         <!-- Card 10 -->
         <div class="menu-card" data-category="drinks">
-            <img src="assets/image/lassi.jpg" alt="Sweet Lassi">
+            <img src="/assets/image/lassi.jpg" alt="Chicken Curry">
             <h3>Sweet Lassi</h3>
             <p>Sweet & creamy Lassi served chilled with rose essence.</p>
             <span>₹40</span>
-            <a href="order.html?item=Sweet%20Lassi&price=40">
+            <a href="../order/order.html?item=Chicken%20Curry&price=200">
                 <button>Order Now</button>
             </a>
         </div>
@@ -189,7 +192,7 @@
         <p>© 2025 Mess Tiffin Service | All Rights Reserved | Author: By Moin </p>
     </footer>
 
-    <script src="components/common.js"></script>
+    <script src="../components/common.js"></script>
     <script src="script.js"></script>
 </body>
 
